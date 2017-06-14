@@ -1,0 +1,75 @@
+body {
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+sub {
+    font-size: 50%;
+}
+
+#top-navbar {
+    margin-bottom: 0px;
+}
+
+#top-navbar ul li a {
+    font-size: 15px;
+}
+
+section {
+    min-height: 500px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+section.inverse {
+    background-color: #333;
+    color: white;
+}
+
+.section-heading {
+    font-size: 3em;
+    display: inline-block;
+    padding: 0px 15px 15px;
+    border-bottom: 3px solid #2780e3;
+    margin-bottom: 50px;
+}
+
+#home {
+    margin-top: 40px;
+    background-color: #333;
+    font-size: 1.5em;
+    color: white;
+    background: url('../images/container-bar.jpg') no-repeat;
+    background-size: cover;
+    text-shadow: 1px 1px 1px black;
+}
+
+#home h1 {
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+#home .fa {
+    margin-right: 3px;
+}
+
+#home .lead {
+    margin-bottom: 40px;
+}
+
+#quick-stats {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.speaker-image img {
+    border-radius: 300px;
+}
+
+.speaker-title {
+    font-size: .8em;
+    color: #ddd;
+}

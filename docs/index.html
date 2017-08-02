@@ -19,9 +19,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">NRV ContainerDay<sub>Dev</sub></a>
+                <a class="navbar-brand" href="/">
+                    <img src="images/nrv-logo.png" style="display:inline-block;height:26px;" /> ContainerDay<sub>Dev</sub></a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#about">About</a></li>
                     <li><a href="#speakers">Speakers</a></li>
@@ -37,20 +38,23 @@
     <section id="home">
         <div class="container text-center">
             <div class="row">
-                <div class="col-xs-12"><h1>ContainerDay<sub>Dev</sub></h1></div>
+                <div class="col-xs-12 text-center">
+                    <img src="images/nrv-logo.png" style="height:100px;" />
+                    <h1 style="margin-top:0px;">ContainerDay<sub>Dev</sub></h1>
+                </div>
             </div>
             <div class="row" id="quick-stats">
                 <div class="col-md-3">
-                    <i class="fa fa-map-marker text-primary"></i>&nbsp;Blacksburg, VA
+                    <i class="fa fa-map-marker text-blue"></i>&nbsp;Blacksburg, VA
                 </div>
                 <div class="col-md-3">
-                    <i class="fa fa-calendar text-primary"></i>&nbsp;August 12, 2017
+                    <i class="fa fa-calendar text-green"></i>&nbsp;August 12, 2017
                 </div>
                 <div class="col-md-3">
-                    <i class="fa fa-microphone text-primary"></i>&nbsp;4 sessions
+                    <i class="fa fa-microphone text-orange"></i>&nbsp;4 sessions
                 </div>
                 <div class="col-md-3">
-                    <i class="fa fa-bolt text-primary"></i>&nbsp;4 Lightning Talks
+                    <i class="fa fa-bolt text-orange"></i>&nbsp;4 Lightning Talks
                 </div>
             </div>
 
@@ -94,15 +98,23 @@
             </div>
 
             <div class="row">
-                <!--
                 <div class="col-md-2 col-md-offset-2">
                     <div class="speaker-image"><img src="images/irwin.jpg" class="img-responsive" /></div>
                     <div class="speaker-name">Michael Irwin</div>
                     <div class="speaker-title">Docker Captain and Application Architect at Virginia Tech</div>
                 </div>
-                -->
-                <div class="col-md-12">
-                    <h3>Speaker bios coming soon!</h3>
+                <div class="col-md-2">
+                    <div class="speaker-image"><img src="images/russ.jpg" class="img-responsive" /></div>
+                    <div class="speaker-name">Russ Memisyazici</div>
+                    <div class="speaker-title">Lead Network Architect at Virginia Cyber Range</div>
+                </div>
+                <div class="col-md-2">
+                    <div class="speaker-image"><img src="images/ron.jpg" class="img-responsive" /></div>
+                    <div class="speaker-name">Ronald Bruintjes</div>
+                    <div class="speaker-title">Programmer/Analyst at Medeco Security Locks</div>
+                </div>
+                <div class="col-md-2">
+                    <div class="speaker-name" style="margin-top:75px;">More to come shortly!</div>
                 </div>
             </div>
         </div>
@@ -121,21 +133,114 @@
                     <p >The day is going to be split into two portions... Learn in the morning. Apply it in the afternoon.</p>
                 </div>
 
-                <div class="col-md-6 col-md-offset-3">
-                    <table class="table table-striped">
-                        <tr>
-                            <td class="text-right">9:15-9:25</td>
-                            <td>Kickoff/Intro</td>
-                        </tr>
-                        <tr>
-                            <td class="text-right">9:30-12:30</td>
-                            <td>Sessions (more specifics coming soon)</td>
-                        </tr>
-                        <tr>
-                            <td class="text-right">12:30-5:00</td>
-                            <td>Lunch, Workshops, Dockerize your own app<br />10-minute lightning talks each hour</td>
-                        </tr>
-                    </table>
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="striped-rows">
+                        <div class="row">
+                            <div class="col-md-3 text-right">9:00-9:15</div>
+                            <div class="col-md-9">Kickoff/Intro</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 text-right">9:15-10:00</div>
+                            <div class="col-md-9">
+                                <div class="talk">
+                                    <div class="title"><i class="fa fa-microphone text-orange"></i> Why Containers/Docker?</div>
+                                    <div class="abstract">
+                                        What in the world are containers? What problem are they trying to solve? In this talk, we'll get some understanding of what containers are and, possibly more importantly, what they aren't. 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 text-right">10:05-10:50</div>
+                            <div class="col-md-9">
+                                <div class="talk">
+                                    <div class="title"><i class="fa fa-microphone text-orange"></i> Getting Started... from nothing to something</div>
+                                    <div class="abstract">
+                                        In this session, we're going to download Docker, get it installed, and start running some containers! We'll start with a simple "Hello World", but then run an actual web application... with nothing but Docker installed!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 text-right">10:55-11:40</div>
+                            <div class="col-md-9">
+                                <div class="talk">
+                                    <div class="title"><i class="fa fa-microphone text-orange"></i> Building Effective Images</div>
+                                    <div class="abstract">
+                                        Building images is easy. Building good images?  A little harder. How do you reuse layers in images? How can you make super small images? What problems do multi-stage builds solve? This session will provide all of these answers!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 text-right">11:45-12:30</div>
+                            <div class="col-md-9">
+                                <div class="talk">
+                                    <div class="title"><i class="fa fa-microphone text-orange"></i> Dockerize an App using Docker Compose</div>
+                                    <div class="abstract">
+                                        Docker Compose is a fantastic tool to help spin up many services (databases, caches, etc.) with a single command. But, not every application is using Compose. In this session, we're going to take a project from GitHub and "Dockerize" it. By the end, you too can launch this application with a single command!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 text-right">12:30-5:00</div>
+                            <div class="col-md-9">
+                                Lunch, Workshops, Dockerize your own app
+                                <div class="abstract">
+                                    Bring an app and work to Dockerize it! There will be plenty of folks around to help answer questions along the way!
+                                    <br /><br />
+                                    Don't have an app to work on? You can either hack something together or go through several workshops that will be available!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3 text-right">1:00</div>
+                            <div class="col-md-9">
+                                <div class="talk">
+                                    <div class="title"><i class="fa fa-bolt text-orange"></i> Windows Containers</div>
+                                    <div class="abstract">
+                                        Docker isn't just for Mac/Linux, but for Windows applications too! In this quick demo, we're going to build a .NET app and deploy it using IIS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 text-right">2:00</div>
+                            <div class="col-md-9">
+                                <div class="talk">
+                                    <div class="title"><i class="fa fa-bolt text-orange"></i> Deploying Containers on AWS</div>
+                                    <div class="abstract">
+                                        The EC2 Container Service on AWS makes deploying containers as simple as it gets!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 text-right">3:00</div>
+                            <div class="col-md-9">
+                                <div class="talk">
+                                    <div class="title"><i class="fa fa-bolt text-orange"></i> Play with Docker</div>
+                                    <div class="abstract">
+                                        Two Docker Captains put together an incredible website that makes it super easy to get started and playing with Docker. Come see some of the neat features and watch a demo of deploying an app across a cluster of nodes using Docker Swarm!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 text-right">4:00</div>
+                            <div class="col-md-9">
+                                <div class="talk">
+                                    <div class="title"><i class="fa fa-bolt text-orange"></i> Summit QA</div>
+                                    <div class="abstract">
+                                        Docker has completely changed the way Summit (an app developed at VT) runs its QA environment. Come see how, within minutes, a code push creates a unique deployment and immediately allows the QA team an environment to test in. And, of course, it's all Dockerized.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
@@ -164,22 +269,98 @@
 
     <section id="location">
         <div class="container text-center">
-            <div class="row text-center">
-                <div class="col-md-10 col-md-offset-1">
+            <div class="row">
+                <div class="col-md-8 box">
                     <h2 class="section-heading">Location</h2>
+                    <h3 style="margin-bottom:35px;margin-top:0px;">Torgersen Hall, Room 3100 on the Virginia Tech campus</h3>
+                    <p><a class="btn btn-lg btn-success" href="https://www.google.com/maps/place/Torgersen+Hall/@37.2281563,-80.4216321,16.31z/data=!4m5!3m4!1s0x0:0x6a6246e2ef19fd03!8m2!3d37.2298404!4d-80.4202706">Open in Google Maps</a></p>
+
                 </div>
             </div>
+        </div>
+    </section>
 
+    <section id="contact">
+        <div class="container text-center">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h3>Final details coming soon!<br /><br />It will be in Blacksburg, most likely on the Virginia Tech campus.</h3>
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3>Have questions? No worries! Send us a note!</h3>
+                    <form class="form-horizontal" action="https://formspree.io/" method="post" id="submit-form">
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Name</label>
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Email Address</label>
+                            <div class="col-md-6">
+                                <input type="email" name="_replyto" class="form-control" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Message</label>
+                            <div class="col-md-6">
+                                <textarea class="form-control" rows="5" name="message" required placeholder="What's your question? How excited are you?"></textarea>
+                            </div>
+                        </div>
+                        <input type="text" name="_gotcha" style="display:none;" />
+
+                        <div class="col-md-6 col-md-offset-4 text-left">
+                            <div class="message-creation"><p><small>NOTE: All fields are required</small></p></div>
+                            <button class="btn btn-lg btn-warning message-creation"><i class="fa fa-envelope"></i>&nbsp; &nbsp;Send Message</button>
+                            <a class="btn btn-lg btn-warning message-pending disabled" style="display:none;" href="javascript:void(0)"><i class="fa fa-spin fa-circle-o-notch"></i>&nbsp; &nbsp;Sending Message...</a>
+                            <a class="btn btn-lg btn-success message-sent" style="display:none;" href="javascript:void(0)"><i class="fa fa-check"></i>&nbsp; &nbsp;Message Sent!</a>
+                            <a class="btn btn-lg btn-danger message-error" style="display:none;" href="javascript:void(0)"><i class="fa fa-times-circle"></i>&nbsp; &nbsp;Uh oh! Something happened...</a>
+                        </div>
+                    </form>
                 </div>
             </div>
-
         </div>
     </section>
 
     <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $("body").scrollspy({ target: "#navbar", offset: 50 });
+        $(document).on("click", "#navbar a", function(evt) {
+            evt.preventDefault();
+            $("html, body").animate({ scrollTop: $( $.attr(this, 'href') ).offset().top }, 500);
+        });
+
+        $("#submit-form").on("submit", function(event) {
+            event.preventDefault();
+
+            var $form = $(this);
+            $(".message-creation").hide();
+            $(".message-pending").show();
+            $form.find("input,textarea").attr("disabled", "disabled");
+            
+            var url = $form.attr("action");
+            url += "contact" + "@" + "nrvcontainerday.io";
+            $.ajax({
+                url : url,
+                method : "POST",
+                data : {
+                    name: $("[name='name']").val(),
+                    _replyto: $("[name='_replyto']").val(),
+                    message: $("[name='message']").val(),
+                    _subject: "[NRVContainerDay] - Contact Request",
+                    _gotcha: $("[name='_gotcha']").val(),
+                },
+                dataType : "json"
+            })
+            .done(function() { 
+                $(".message-sent").show(); 
+                $(".message-pending").hide(); 
+                $form.find("input,textarea").removeAttr("disabled");
+            })
+            .fail(function() {
+                $(".message-error").show(); 
+                $(".message-pending").hide(); 
+            });
+        });
+    </script>
 </body>
 </html>

@@ -33,7 +33,7 @@ section.inverse {
     font-size: 3em;
     display: inline-block;
     padding: 0px 15px 15px;
-    border-bottom: 3px solid #2780e3;
+    border-bottom: 3px solid #128d19;
     margin-bottom: 50px;
 }
 
@@ -72,4 +72,41 @@ section.inverse {
 .speaker-title {
     font-size: .8em;
     color: #ddd;
+}
+
+.text-blue { color: #1d7cf9; }
+.text-green { color: #128d19; }
+.text-orange { color: #fd962c; }
+
+.btn-primary { background-color: #1d7cf9; border-color: #1d7cf9; }
+.btn-success { background-color: #128d19; border-color: #128d19; }
+.btn-warning { background-color: #fd962c; border-color: #fd962c; }
+
+.talk .fa {
+    margin-right: 5px;
+}
+
+.abstract {
+    font-size:70%;
+    font-style: italic;
+}
+
+.striped-rows .row {
+    padding: 8px;
+    border-top: 1px solid #dddddd;
+}
+
+.striped-rows .row:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#location {
+    background-image: url('images/map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#location .box {
+    background-color: rgba(20,20,20,.8);
+    color: white;
 }

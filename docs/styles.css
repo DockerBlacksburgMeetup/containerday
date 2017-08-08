@@ -65,8 +65,21 @@ section.inverse {
     margin-bottom: 30px;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+    .speaker-bio:nth-child(odd) {
+        clear: both;
+        content: '';
+    }
+}
+
+.speaker-bio {
+    margin-bottom: 30px;
+}
+
 .speaker-image img {
     border-radius: 300px;
+    max-height: 200px;
+    margin: 0 auto;
 }
 
 .speaker-title {
@@ -104,6 +117,7 @@ section.inverse {
     background-image: url('images/map.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-x: right;
 }
 
 #location .box {

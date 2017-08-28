@@ -1,0 +1,10 @@
+[
+    { "id" : 1, "name" : "Why Containers/Docker?" },
+    { "id" : 2, "name" : "Getting Started... from nothing to something" },
+    { "id" : 3, "name" : "Building Effective Images" },
+    { "id" : 4, "name" : "Dockerize an App using Docker Compose" },
+    { "id" : 5, "name" : "Windows Containers" },
+    { "id" : 6, "name" : "Deploying Containers on AWS" },
+    { "id" : 7, "name" : "Play with Docker" },
+    { "id" : 8, "name" : "Summit QA" }
+]
